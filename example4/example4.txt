@@ -1,0 +1,557 @@
+"".(*Chinese).GetName STEXT nosplit size=57 args=0x8 locals=0x18 funcid=0x0
+	0x0000 00000 (example4/main.go:17)	TEXT	"".(*Chinese).GetName(SB), NOSPLIT|ABIInternal, $24-8
+	0x0000 00000 (example4/main.go:17)	SUBQ	$24, SP
+	0x0004 00004 (example4/main.go:17)	MOVQ	BP, 16(SP)
+	0x0009 00009 (example4/main.go:17)	LEAQ	16(SP), BP
+	0x000e 00014 (example4/main.go:17)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x000e 00014 (example4/main.go:17)	FUNCDATA	$1, gclocals·2589ca35330fc0fce83503f4569854a0(SB)
+	0x000e 00014 (example4/main.go:17)	FUNCDATA	$5, "".(*Chinese).GetName.arginfo1(SB)
+	0x000e 00014 (example4/main.go:17)	MOVQ	AX, "".chinese+32(SP)
+	0x0013 00019 (example4/main.go:17)	MOVUPS	X15, "".~r0(SP)
+	0x0018 00024 (example4/main.go:18)	MOVQ	"".chinese+32(SP), CX
+	0x001d 00029 (example4/main.go:18)	TESTB	AL, (CX)
+	0x001f 00031 (example4/main.go:18)	MOVQ	(CX), AX
+	0x0022 00034 (example4/main.go:18)	MOVQ	8(CX), BX
+	0x0026 00038 (example4/main.go:18)	MOVQ	AX, "".~r0(SP)
+	0x002a 00042 (example4/main.go:18)	MOVQ	BX, "".~r0+8(SP)
+	0x002f 00047 (example4/main.go:18)	MOVQ	16(SP), BP
+	0x0034 00052 (example4/main.go:18)	ADDQ	$24, SP
+	0x0038 00056 (example4/main.go:18)	RET
+	0x0000 48 83 ec 18 48 89 6c 24 10 48 8d 6c 24 10 48 89  H...H.l$.H.l$.H.
+	0x0010 44 24 20 44 0f 11 3c 24 48 8b 4c 24 20 84 01 48  D$ D..<$H.L$ ..H
+	0x0020 8b 01 48 8b 59 08 48 89 04 24 48 89 5c 24 08 48  ..H.Y.H..$H.\$.H
+	0x0030 8b 6c 24 10 48 83 c4 18 c3                       .l$.H....
+"".main STEXT size=153 args=0x0 locals=0x38 funcid=0x0
+	0x0000 00000 (example4/main.go:21)	TEXT	"".main(SB), ABIInternal, $56-0
+	0x0000 00000 (example4/main.go:21)	CMPQ	SP, 16(R14)
+	0x0004 00004 (example4/main.go:21)	PCDATA	$0, $-2
+	0x0004 00004 (example4/main.go:21)	JLS	143
+	0x000a 00010 (example4/main.go:21)	PCDATA	$0, $-1
+	0x000a 00010 (example4/main.go:21)	SUBQ	$56, SP
+	0x000e 00014 (example4/main.go:21)	MOVQ	BP, 48(SP)
+	0x0013 00019 (example4/main.go:21)	LEAQ	48(SP), BP
+	0x0018 00024 (example4/main.go:21)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0018 00024 (example4/main.go:21)	FUNCDATA	$1, gclocals·ff19ed39bdde8a01a800918ac3ef0ec7(SB)
+	0x0018 00024 (example4/main.go:22)	LEAQ	type."".Chinese(SB), AX
+	0x001f 00031 (example4/main.go:22)	PCDATA	$1, $0
+	0x001f 00031 (example4/main.go:22)	NOP
+	0x0020 00032 (example4/main.go:22)	CALL	runtime.newobject(SB)
+	0x0025 00037 (example4/main.go:22)	MOVQ	AX, ""..autotmp_2+16(SP)
+	0x002a 00042 (example4/main.go:22)	MOVQ	$7, 8(AX)
+	0x0032 00050 (example4/main.go:22)	PCDATA	$0, $-2
+	0x0032 00050 (example4/main.go:22)	CMPL	runtime.writeBarrier(SB), $0
+	0x0039 00057 (example4/main.go:22)	JEQ	61
+	0x003b 00059 (example4/main.go:22)	JMP	73
+	0x003d 00061 (example4/main.go:22)	LEAQ	go.string."chinese"(SB), CX
+	0x0044 00068 (example4/main.go:22)	MOVQ	CX, (AX)
+	0x0047 00071 (example4/main.go:22)	JMP	90
+	0x0049 00073 (example4/main.go:22)	MOVQ	AX, DI
+	0x004c 00076 (example4/main.go:22)	LEAQ	go.string."chinese"(SB), CX
+	0x0053 00083 (example4/main.go:22)	CALL	runtime.gcWriteBarrierCX(SB)
+	0x0058 00088 (example4/main.go:22)	JMP	90
+	0x005a 00090 (example4/main.go:22)	PCDATA	$0, $-1
+	0x005a 00090 (example4/main.go:22)	MOVQ	""..autotmp_2+16(SP), CX
+	0x005f 00095 (example4/main.go:22)	MOVQ	CX, ""..autotmp_1+24(SP)
+	0x0064 00100 (example4/main.go:22)	LEAQ	go.itab.*"".Chinese,"".Person(SB), DX
+	0x006b 00107 (example4/main.go:22)	MOVQ	DX, "".p+32(SP)
+	0x0070 00112 (example4/main.go:22)	MOVQ	CX, "".p+40(SP)
+	0x0075 00117 (example4/main.go:23)	MOVQ	"".p+32(SP), AX
+	0x007a 00122 (example4/main.go:23)	MOVQ	"".p+40(SP), BX
+	0x007f 00127 (example4/main.go:23)	NOP
+	0x0080 00128 (example4/main.go:23)	CALL	"".PrintName(SB)
+	0x0085 00133 (example4/main.go:24)	MOVQ	48(SP), BP
+	0x008a 00138 (example4/main.go:24)	ADDQ	$56, SP
+	0x008e 00142 (example4/main.go:24)	RET
+	0x008f 00143 (example4/main.go:24)	NOP
+	0x008f 00143 (example4/main.go:21)	PCDATA	$1, $-1
+	0x008f 00143 (example4/main.go:21)	PCDATA	$0, $-2
+	0x008f 00143 (example4/main.go:21)	CALL	runtime.morestack_noctxt(SB)
+	0x0094 00148 (example4/main.go:21)	PCDATA	$0, $-1
+	0x0094 00148 (example4/main.go:21)	JMP	0
+	0x0000 49 3b 66 10 0f 86 85 00 00 00 48 83 ec 38 48 89  I;f.......H..8H.
+	0x0010 6c 24 30 48 8d 6c 24 30 48 8d 05 00 00 00 00 90  l$0H.l$0H.......
+	0x0020 e8 00 00 00 00 48 89 44 24 10 48 c7 40 08 07 00  .....H.D$.H.@...
+	0x0030 00 00 83 3d 00 00 00 00 00 74 02 eb 0c 48 8d 0d  ...=.....t...H..
+	0x0040 00 00 00 00 48 89 08 eb 11 48 89 c7 48 8d 0d 00  ....H....H..H...
+	0x0050 00 00 00 e8 00 00 00 00 eb 00 48 8b 4c 24 10 48  ..........H.L$.H
+	0x0060 89 4c 24 18 48 8d 15 00 00 00 00 48 89 54 24 20  .L$.H......H.T$ 
+	0x0070 48 89 4c 24 28 48 8b 44 24 20 48 8b 5c 24 28 90  H.L$(H.D$ H.\$(.
+	0x0080 e8 00 00 00 00 48 8b 6c 24 30 48 83 c4 38 c3 e8  .....H.l$0H..8..
+	0x0090 00 00 00 00 e9 67 ff ff ff                       .....g...
+	rel 3+0 t=24 type.*"".Chinese+0
+	rel 27+4 t=15 type."".Chinese+0
+	rel 33+4 t=7 runtime.newobject+0
+	rel 52+4 t=15 runtime.writeBarrier+-1
+	rel 64+4 t=15 go.string."chinese"+0
+	rel 79+4 t=15 go.string."chinese"+0
+	rel 84+4 t=7 runtime.gcWriteBarrierCX+0
+	rel 103+4 t=15 go.itab.*"".Chinese,"".Person+0
+	rel 129+4 t=7 "".PrintName+0
+	rel 144+4 t=7 runtime.morestack_noctxt+0
+"".PrintName STEXT size=421 args=0x10 locals=0xd0 funcid=0x0
+	0x0000 00000 (example4/main.go:26)	TEXT	"".PrintName(SB), ABIInternal, $208-16
+	0x0000 00000 (example4/main.go:26)	LEAQ	-80(SP), R12
+	0x0005 00005 (example4/main.go:26)	CMPQ	R12, 16(R14)
+	0x0009 00009 (example4/main.go:26)	PCDATA	$0, $-2
+	0x0009 00009 (example4/main.go:26)	JLS	391
+	0x000f 00015 (example4/main.go:26)	PCDATA	$0, $-1
+	0x000f 00015 (example4/main.go:26)	SUBQ	$208, SP
+	0x0016 00022 (example4/main.go:26)	MOVQ	BP, 200(SP)
+	0x001e 00030 (example4/main.go:26)	LEAQ	200(SP), BP
+	0x0026 00038 (example4/main.go:26)	FUNCDATA	$0, gclocals·09cf9819fc716118c209c2d2155a3632(SB)
+	0x0026 00038 (example4/main.go:26)	FUNCDATA	$1, gclocals·0e428aa1f0cdf0b9dfba31fe4af70487(SB)
+	0x0026 00038 (example4/main.go:26)	FUNCDATA	$2, "".PrintName.stkobj(SB)
+	0x0026 00038 (example4/main.go:26)	FUNCDATA	$5, "".PrintName.arginfo1(SB)
+	0x0026 00038 (example4/main.go:26)	MOVQ	AX, "".p+216(SP)        ;; "".p+216(SP) = iface.itab
+	0x002e 00046 (example4/main.go:26)	MOVQ	BX, "".p+224(SP)        ;; "".p+224(SP) = iface.data
+	0x0036 00054 (example4/main.go:27)	TESTB	AL, (AX)
+	0x0038 00056 (example4/main.go:27)	MOVQ	24(AX), CX              ;; CX = iface.itab.fun
+	0x003c 00060 (example4/main.go:27)	MOVQ	BX, AX                  ;; AX = iface.data
+	0x003f 00063 (example4/main.go:27)	PCDATA	$1, $1
+	0x003f 00063 (example4/main.go:27)	NOP
+	0x0040 00064 (example4/main.go:27)	CALL	CX                      ;; iface.itab.fun(iface.data)
+	0x0042 00066 (example4/main.go:27)	MOVQ	AX, "".name1+96(SP)     ;; "".name1+96(SP) = AX
+	0x0047 00071 (example4/main.go:27)	MOVQ	BX, "".name1+104(SP)    ;; "".name1+104(SP = BX
+	0x004c 00076 (example4/main.go:28)	CALL	runtime.convTstring(SB)
+	0x0051 00081 (example4/main.go:28)	MOVQ	AX, ""..autotmp_10+72(SP)
+	0x0056 00086 (example4/main.go:28)	LEAQ	type.string(SB), CX
+	0x005d 00093 (example4/main.go:28)	MOVQ	CX, "".~arg0+80(SP)
+	0x0062 00098 (example4/main.go:28)	MOVQ	AX, "".~arg0+88(SP)
+	0x0067 00103 (example4/main.go:28)	MOVUPS	X15, ""..autotmp_12+160(SP)
+	0x0070 00112 (example4/main.go:28)	LEAQ	""..autotmp_12+160(SP), CX
+	0x0078 00120 (example4/main.go:28)	MOVQ	CX, ""..autotmp_11+64(SP)
+	0x007d 00125 (example4/main.go:28)	TESTB	AL, (CX)
+	0x007f 00127 (example4/main.go:28)	MOVQ	"".~arg0+80(SP), DX
+	0x0084 00132 (example4/main.go:28)	MOVQ	"".~arg0+88(SP), BX
+	0x0089 00137 (example4/main.go:28)	MOVQ	DX, ""..autotmp_12+160(SP)
+	0x0091 00145 (example4/main.go:28)	MOVQ	BX, ""..autotmp_12+168(SP)
+	0x0099 00153 (example4/main.go:28)	TESTB	AL, (CX)
+	0x009b 00155 (example4/main.go:28)	JMP	157
+	0x009d 00157 (example4/main.go:28)	MOVQ	CX, fmt.a+176(SP)
+	0x00a5 00165 (example4/main.go:28)	MOVQ	$1, fmt.a+184(SP)
+	0x00b1 00177 (example4/main.go:28)	MOVQ	$1, fmt.a+192(SP)
+	0x00bd 00189 (example4/main.go:28)	MOVQ	$0, fmt.n+40(SP)
+	0x00c6 00198 (example4/main.go:28)	MOVUPS	X15, fmt.err+112(SP)
+	0x00cc 00204 (<unknown line number>)	NOP
+	0x00cc 00204 ($GOROOT/src/fmt/print.go:274)	MOVQ	$0, fmt..autotmp_3+56(SP)
+	0x00d5 00213 ($GOROOT/src/fmt/print.go:274)	MOVUPS	X15, fmt..autotmp_4+144(SP)
+	0x00de 00222 ($GOROOT/src/fmt/print.go:274)	MOVUPS	X15, ""..autotmp_9+128(SP)
+	0x00e7 00231 ($GOROOT/src/fmt/print.go:274)	MOVQ	fmt.a+176(SP), CX
+	0x00ef 00239 ($GOROOT/src/fmt/print.go:274)	MOVQ	fmt.a+184(SP), DI
+	0x00f7 00247 ($GOROOT/src/fmt/print.go:274)	MOVQ	fmt.a+192(SP), SI
+	0x00ff 00255 ($GOROOT/src/fmt/print.go:274)	MOVQ	os.Stdout(SB), BX
+	0x0106 00262 ($GOROOT/src/fmt/print.go:274)	LEAQ	go.itab.*os.File,io.Writer(SB), AX
+	0x010d 00269 ($GOROOT/src/fmt/print.go:274)	CALL	fmt.Fprintln(SB)
+	0x0112 00274 ($GOROOT/src/fmt/print.go:274)	MOVQ	AX, ""..autotmp_8+48(SP)
+	0x0117 00279 ($GOROOT/src/fmt/print.go:274)	MOVQ	BX, ""..autotmp_9+128(SP)
+	0x011f 00287 ($GOROOT/src/fmt/print.go:274)	MOVQ	CX, ""..autotmp_9+136(SP)
+	0x0127 00295 ($GOROOT/src/fmt/print.go:274)	MOVQ	""..autotmp_8+48(SP), DX
+	0x012c 00300 ($GOROOT/src/fmt/print.go:274)	MOVQ	DX, fmt..autotmp_3+56(SP)
+	0x0131 00305 ($GOROOT/src/fmt/print.go:274)	MOVQ	""..autotmp_9+128(SP), DX
+	0x0139 00313 ($GOROOT/src/fmt/print.go:274)	MOVQ	""..autotmp_9+136(SP), R8
+	0x0141 00321 ($GOROOT/src/fmt/print.go:274)	MOVQ	DX, fmt..autotmp_4+144(SP)
+	0x0149 00329 ($GOROOT/src/fmt/print.go:274)	MOVQ	R8, fmt..autotmp_4+152(SP)
+	0x0151 00337 (example4/main.go:28)	MOVQ	fmt..autotmp_3+56(SP), DX
+	0x0156 00342 (example4/main.go:28)	MOVQ	DX, fmt.n+40(SP)
+	0x015b 00347 (example4/main.go:28)	MOVQ	fmt..autotmp_4+144(SP), DX
+	0x0163 00355 (example4/main.go:28)	MOVQ	fmt..autotmp_4+152(SP), R8
+	0x016b 00363 (example4/main.go:28)	MOVQ	DX, fmt.err+112(SP)
+	0x0170 00368 (example4/main.go:28)	MOVQ	R8, fmt.err+120(SP)
+	0x0175 00373 (example4/main.go:28)	JMP	375
+	0x0177 00375 (example4/main.go:29)	PCDATA	$1, $-1
+	0x0177 00375 (example4/main.go:29)	MOVQ	200(SP), BP
+	0x017f 00383 (example4/main.go:29)	ADDQ	$208, SP
+	0x0186 00390 (example4/main.go:29)	RET
+	0x0187 00391 (example4/main.go:29)	NOP
+	0x0187 00391 (example4/main.go:26)	PCDATA	$1, $-1
+	0x0187 00391 (example4/main.go:26)	PCDATA	$0, $-2
+	0x0187 00391 (example4/main.go:26)	MOVQ	AX, 8(SP)
+	0x018c 00396 (example4/main.go:26)	MOVQ	BX, 16(SP)
+	0x0191 00401 (example4/main.go:26)	CALL	runtime.morestack_noctxt(SB)
+	0x0196 00406 (example4/main.go:26)	MOVQ	8(SP), AX
+	0x019b 00411 (example4/main.go:26)	MOVQ	16(SP), BX
+	0x01a0 00416 (example4/main.go:26)	PCDATA	$0, $-1
+	0x01a0 00416 (example4/main.go:26)	JMP	0
+	0x0000 4c 8d 64 24 b0 4d 3b 66 10 0f 86 78 01 00 00 48  L.d$.M;f...x...H
+	0x0010 81 ec d0 00 00 00 48 89 ac 24 c8 00 00 00 48 8d  ......H..$....H.
+	0x0020 ac 24 c8 00 00 00 48 89 84 24 d8 00 00 00 48 89  .$....H..$....H.
+	0x0030 9c 24 e0 00 00 00 84 00 48 8b 48 18 48 89 d8 90  .$......H.H.H...
+	0x0040 ff d1 48 89 44 24 60 48 89 5c 24 68 e8 00 00 00  ..H.D$`H.\$h....
+	0x0050 00 48 89 44 24 48 48 8d 0d 00 00 00 00 48 89 4c  .H.D$HH......H.L
+	0x0060 24 50 48 89 44 24 58 44 0f 11 bc 24 a0 00 00 00  $PH.D$XD...$....
+	0x0070 48 8d 8c 24 a0 00 00 00 48 89 4c 24 40 84 01 48  H..$....H.L$@..H
+	0x0080 8b 54 24 50 48 8b 5c 24 58 48 89 94 24 a0 00 00  .T$PH.\$XH..$...
+	0x0090 00 48 89 9c 24 a8 00 00 00 84 01 eb 00 48 89 8c  .H..$........H..
+	0x00a0 24 b0 00 00 00 48 c7 84 24 b8 00 00 00 01 00 00  $....H..$.......
+	0x00b0 00 48 c7 84 24 c0 00 00 00 01 00 00 00 48 c7 44  .H..$........H.D
+	0x00c0 24 28 00 00 00 00 44 0f 11 7c 24 70 48 c7 44 24  $(....D..|$pH.D$
+	0x00d0 38 00 00 00 00 44 0f 11 bc 24 90 00 00 00 44 0f  8....D...$....D.
+	0x00e0 11 bc 24 80 00 00 00 48 8b 8c 24 b0 00 00 00 48  ..$....H..$....H
+	0x00f0 8b bc 24 b8 00 00 00 48 8b b4 24 c0 00 00 00 48  ..$....H..$....H
+	0x0100 8b 1d 00 00 00 00 48 8d 05 00 00 00 00 e8 00 00  ......H.........
+	0x0110 00 00 48 89 44 24 30 48 89 9c 24 80 00 00 00 48  ..H.D$0H..$....H
+	0x0120 89 8c 24 88 00 00 00 48 8b 54 24 30 48 89 54 24  ..$....H.T$0H.T$
+	0x0130 38 48 8b 94 24 80 00 00 00 4c 8b 84 24 88 00 00  8H..$....L..$...
+	0x0140 00 48 89 94 24 90 00 00 00 4c 89 84 24 98 00 00  .H..$....L..$...
+	0x0150 00 48 8b 54 24 38 48 89 54 24 28 48 8b 94 24 90  .H.T$8H.T$(H..$.
+	0x0160 00 00 00 4c 8b 84 24 98 00 00 00 48 89 54 24 70  ...L..$....H.T$p
+	0x0170 4c 89 44 24 78 eb 00 48 8b ac 24 c8 00 00 00 48  L.D$x..H..$....H
+	0x0180 81 c4 d0 00 00 00 c3 48 89 44 24 08 48 89 5c 24  .......H.D$.H.\$
+	0x0190 10 e8 00 00 00 00 48 8b 44 24 08 48 8b 5c 24 10  ......H.D$.H.\$.
+	0x01a0 e9 5b fe ff ff                                   .[...
+	rel 3+0 t=25 type."".Person+96
+	rel 3+0 t=24 type.string+0
+	rel 3+0 t=24 type.*os.File+0
+	rel 64+0 t=10 +0
+	rel 77+4 t=7 runtime.convTstring+0
+	rel 89+4 t=15 type.string+0
+	rel 258+4 t=15 os.Stdout+0
+	rel 265+4 t=15 go.itab.*os.File,io.Writer+0
+	rel 270+4 t=7 fmt.Fprintln+0
+	rel 402+4 t=7 runtime.morestack_noctxt+0
+"".Person.GetName STEXT dupok size=140 args=0x10 locals=0x30 funcid=0x16
+	0x0000 00000 (<autogenerated>:1)	TEXT	"".Person.GetName(SB), DUPOK|WRAPPER|ABIInternal, $48-16
+	0x0000 00000 (<autogenerated>:1)	CMPQ	SP, 16(R14)
+	0x0004 00004 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x0004 00004 (<autogenerated>:1)	JLS	93
+	0x0006 00006 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x0006 00006 (<autogenerated>:1)	SUBQ	$48, SP
+	0x000a 00010 (<autogenerated>:1)	MOVQ	BP, 40(SP)
+	0x000f 00015 (<autogenerated>:1)	LEAQ	40(SP), BP
+	0x0014 00020 (<autogenerated>:1)	MOVQ	32(R14), R12
+	0x0018 00024 (<autogenerated>:1)	TESTQ	R12, R12
+	0x001b 00027 (<autogenerated>:1)	JNE	120
+	0x001d 00029 (<autogenerated>:1)	NOP
+	0x001d 00029 (<autogenerated>:1)	FUNCDATA	$0, gclocals·09cf9819fc716118c209c2d2155a3632(SB)
+	0x001d 00029 (<autogenerated>:1)	FUNCDATA	$1, gclocals·955e25ebd21d9d330257196a49a276e5(SB)
+	0x001d 00029 (<autogenerated>:1)	FUNCDATA	$5, "".Person.GetName.arginfo1(SB)
+	0x001d 00029 (<autogenerated>:1)	MOVQ	AX, ""..this+56(SP)
+	0x0022 00034 (<autogenerated>:1)	MOVQ	BX, ""..this+64(SP)
+	0x0027 00039 (<autogenerated>:1)	MOVUPS	X15, "".~r0+8(SP)
+	0x002d 00045 (<autogenerated>:1)	MOVQ	""..this+56(SP), CX
+	0x0032 00050 (<autogenerated>:1)	TESTB	AL, (CX)
+	0x0034 00052 (<autogenerated>:1)	MOVQ	""..this+64(SP), AX
+	0x0039 00057 (<autogenerated>:1)	MOVQ	24(CX), CX
+	0x003d 00061 (<autogenerated>:1)	PCDATA	$1, $1
+	0x003d 00061 (<autogenerated>:1)	CALL	CX
+	0x003f 00063 (<autogenerated>:1)	MOVQ	AX, ""..autotmp_2+24(SP)
+	0x0044 00068 (<autogenerated>:1)	MOVQ	BX, ""..autotmp_2+32(SP)
+	0x0049 00073 (<autogenerated>:1)	MOVQ	AX, "".~r0+8(SP)
+	0x004e 00078 (<autogenerated>:1)	MOVQ	BX, "".~r0+16(SP)
+	0x0053 00083 (<autogenerated>:1)	MOVQ	40(SP), BP
+	0x0058 00088 (<autogenerated>:1)	ADDQ	$48, SP
+	0x005c 00092 (<autogenerated>:1)	RET
+	0x005d 00093 (<autogenerated>:1)	NOP
+	0x005d 00093 (<autogenerated>:1)	PCDATA	$1, $-1
+	0x005d 00093 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x005d 00093 (<autogenerated>:1)	MOVQ	AX, 8(SP)
+	0x0062 00098 (<autogenerated>:1)	MOVQ	BX, 16(SP)
+	0x0067 00103 (<autogenerated>:1)	CALL	runtime.morestack_noctxt(SB)
+	0x006c 00108 (<autogenerated>:1)	MOVQ	8(SP), AX
+	0x0071 00113 (<autogenerated>:1)	MOVQ	16(SP), BX
+	0x0076 00118 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x0076 00118 (<autogenerated>:1)	JMP	0
+	0x0078 00120 (<autogenerated>:1)	LEAQ	56(SP), R13
+	0x007d 00125 (<autogenerated>:1)	NOP
+	0x0080 00128 (<autogenerated>:1)	CMPQ	(R12), R13
+	0x0084 00132 (<autogenerated>:1)	JNE	29
+	0x0086 00134 (<autogenerated>:1)	MOVQ	SP, (R12)
+	0x008a 00138 (<autogenerated>:1)	JMP	29
+	0x0000 49 3b 66 10 76 57 48 83 ec 30 48 89 6c 24 28 48  I;f.vWH..0H.l$(H
+	0x0010 8d 6c 24 28 4d 8b 66 20 4d 85 e4 75 5b 48 89 44  .l$(M.f M..u[H.D
+	0x0020 24 38 48 89 5c 24 40 44 0f 11 7c 24 08 48 8b 4c  $8H.\$@D..|$.H.L
+	0x0030 24 38 84 01 48 8b 44 24 40 48 8b 49 18 ff d1 48  $8..H.D$@H.I...H
+	0x0040 89 44 24 18 48 89 5c 24 20 48 89 44 24 08 48 89  .D$.H.\$ H.D$.H.
+	0x0050 5c 24 10 48 8b 6c 24 28 48 83 c4 30 c3 48 89 44  \$.H.l$(H..0.H.D
+	0x0060 24 08 48 89 5c 24 10 e8 00 00 00 00 48 8b 44 24  $.H.\$......H.D$
+	0x0070 08 48 8b 5c 24 10 eb 88 4c 8d 6c 24 38 0f 1f 00  .H.\$...L.l$8...
+	0x0080 4d 39 2c 24 75 97 49 89 24 24 eb 91              M9,$u.I.$$..
+	rel 2+0 t=25 type."".Person+96
+	rel 61+0 t=10 +0
+	rel 104+4 t=7 runtime.morestack_noctxt+0
+os.(*File).close STEXT dupok size=130 args=0x8 locals=0x38 funcid=0x16
+	0x0000 00000 (<autogenerated>:1)	TEXT	os.(*File).close(SB), DUPOK|WRAPPER|ABIInternal, $56-8
+	0x0000 00000 (<autogenerated>:1)	CMPQ	SP, 16(R14)
+	0x0004 00004 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x0004 00004 (<autogenerated>:1)	JLS	95
+	0x0006 00006 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x0006 00006 (<autogenerated>:1)	SUBQ	$56, SP
+	0x000a 00010 (<autogenerated>:1)	MOVQ	BP, 48(SP)
+	0x000f 00015 (<autogenerated>:1)	LEAQ	48(SP), BP
+	0x0014 00020 (<autogenerated>:1)	MOVQ	32(R14), R12
+	0x0018 00024 (<autogenerated>:1)	TESTQ	R12, R12
+	0x001b 00027 (<autogenerated>:1)	JNE	112
+	0x001d 00029 (<autogenerated>:1)	NOP
+	0x001d 00029 (<autogenerated>:1)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x001d 00029 (<autogenerated>:1)	FUNCDATA	$1, gclocals·1c79aa8331d1a9241b20f452c1c60e3c(SB)
+	0x001d 00029 (<autogenerated>:1)	FUNCDATA	$5, os.(*File).close.arginfo1(SB)
+	0x001d 00029 (<autogenerated>:1)	MOVQ	AX, ""..this+64(SP)
+	0x0022 00034 (<autogenerated>:1)	MOVUPS	X15, "".~r0+16(SP)
+	0x0028 00040 (<autogenerated>:1)	MOVQ	""..this+64(SP), CX
+	0x002d 00045 (<autogenerated>:1)	TESTB	AL, (CX)
+	0x002f 00047 (<autogenerated>:1)	MOVQ	(CX), AX
+	0x0032 00050 (<autogenerated>:1)	MOVQ	AX, ""..autotmp_3+8(SP)
+	0x0037 00055 (<autogenerated>:1)	PCDATA	$1, $1
+	0x0037 00055 (<autogenerated>:1)	CALL	os.(*file).close(SB)
+	0x003c 00060 (<autogenerated>:1)	MOVQ	AX, ""..autotmp_2+32(SP)
+	0x0041 00065 (<autogenerated>:1)	MOVQ	BX, ""..autotmp_2+40(SP)
+	0x0046 00070 (<autogenerated>:1)	MOVQ	AX, "".~r0+16(SP)
+	0x004b 00075 (<autogenerated>:1)	MOVQ	BX, "".~r0+24(SP)
+	0x0050 00080 (<autogenerated>:1)	MOVQ	"".~r0+16(SP), AX
+	0x0055 00085 (<autogenerated>:1)	MOVQ	48(SP), BP
+	0x005a 00090 (<autogenerated>:1)	ADDQ	$56, SP
+	0x005e 00094 (<autogenerated>:1)	RET
+	0x005f 00095 (<autogenerated>:1)	NOP
+	0x005f 00095 (<autogenerated>:1)	PCDATA	$1, $-1
+	0x005f 00095 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x005f 00095 (<autogenerated>:1)	MOVQ	AX, 8(SP)
+	0x0064 00100 (<autogenerated>:1)	CALL	runtime.morestack_noctxt(SB)
+	0x0069 00105 (<autogenerated>:1)	MOVQ	8(SP), AX
+	0x006e 00110 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x006e 00110 (<autogenerated>:1)	JMP	0
+	0x0070 00112 (<autogenerated>:1)	LEAQ	64(SP), R13
+	0x0075 00117 (<autogenerated>:1)	CMPQ	(R12), R13
+	0x0079 00121 (<autogenerated>:1)	JNE	29
+	0x007b 00123 (<autogenerated>:1)	MOVQ	SP, (R12)
+	0x007f 00127 (<autogenerated>:1)	NOP
+	0x0080 00128 (<autogenerated>:1)	JMP	29
+	0x0000 49 3b 66 10 76 59 48 83 ec 38 48 89 6c 24 30 48  I;f.vYH..8H.l$0H
+	0x0010 8d 6c 24 30 4d 8b 66 20 4d 85 e4 75 53 48 89 44  .l$0M.f M..uSH.D
+	0x0020 24 40 44 0f 11 7c 24 10 48 8b 4c 24 40 84 01 48  $@D..|$.H.L$@..H
+	0x0030 8b 01 48 89 44 24 08 e8 00 00 00 00 48 89 44 24  ..H.D$......H.D$
+	0x0040 20 48 89 5c 24 28 48 89 44 24 10 48 89 5c 24 18   H.\$(H.D$.H.\$.
+	0x0050 48 8b 44 24 10 48 8b 6c 24 30 48 83 c4 38 c3 48  H.D$.H.l$0H..8.H
+	0x0060 89 44 24 08 e8 00 00 00 00 48 8b 44 24 08 eb 90  .D$......H.D$...
+	0x0070 4c 8d 6c 24 40 4d 39 2c 24 75 a2 49 89 24 24 90  L.l$@M9,$u.I.$$.
+	0x0080 eb 9b                                            ..
+	rel 56+4 t=7 os.(*file).close+0
+	rel 101+4 t=7 runtime.morestack_noctxt+0
+go.cuinfo.packagename. SDWARFCUINFO dupok size=0
+	0x0000 6d 61 69 6e                                      main
+""..inittask SNOPTRDATA size=32
+	0x0000 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 24+8 t=1 fmt..inittask+0
+go.info.fmt.Println$abstract SDWARFABSFCN dupok size=42
+	0x0000 04 66 6d 74 2e 50 72 69 6e 74 6c 6e 00 01 01 11  .fmt.Println....
+	0x0010 61 00 00 00 00 00 00 11 6e 00 01 00 00 00 00 11  a.......n.......
+	0x0020 65 72 72 00 01 00 00 00 00 00                    err.......
+	rel 0+0 t=23 type.[]interface {}+0
+	rel 0+0 t=23 type.error+0
+	rel 0+0 t=23 type.int+0
+	rel 19+4 t=31 go.info.[]interface {}+0
+	rel 27+4 t=31 go.info.int+0
+	rel 37+4 t=31 go.info.error+0
+go.string."chinese" SRODATA dupok size=7
+	0x0000 63 68 69 6e 65 73 65                             chinese
+runtime.strequal·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=1 runtime.strequal+0
+runtime.memequal64·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=1 runtime.memequal64+0
+runtime.gcbits.01 SRODATA dupok size=1
+	0x0000 01                                               .
+type..namedata.*main.Chinese. SRODATA dupok size=15
+	0x0000 01 0d 2a 6d 61 69 6e 2e 43 68 69 6e 65 73 65     ..*main.Chinese
+type..namedata.*func(*main.Chinese) string- SRODATA dupok size=29
+	0x0000 00 1b 2a 66 75 6e 63 28 2a 6d 61 69 6e 2e 43 68  ..*func(*main.Ch
+	0x0010 69 6e 65 73 65 29 20 73 74 72 69 6e 67           inese) string
+type.*func(*"".Chinese) string SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 e3 61 1e 1c 08 08 08 36 00 00 00 00 00 00 00 00  .a.....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*func(*main.Chinese) string-+0
+	rel 48+8 t=1 type.func(*"".Chinese) string+0
+type.func(*"".Chinese) string SRODATA dupok size=72
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 38 06 bf 05 02 08 08 33 00 00 00 00 00 00 00 00  8......3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 01 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00                          ........
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*func(*main.Chinese) string-+0
+	rel 44+4 t=-32763 type.*func(*"".Chinese) string+0
+	rel 56+8 t=1 type.*"".Chinese+0
+	rel 64+8 t=1 type.string+0
+type..namedata.GetName. SRODATA dupok size=9
+	0x0000 01 07 47 65 74 4e 61 6d 65                       ..GetName
+type..namedata.*func() string- SRODATA dupok size=16
+	0x0000 00 0e 2a 66 75 6e 63 28 29 20 73 74 72 69 6e 67  ..*func() string
+type.*func() string SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 bc f4 77 69 08 08 08 36 00 00 00 00 00 00 00 00  ..wi...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*func() string-+0
+	rel 48+8 t=1 type.func() string+0
+type.func() string SRODATA dupok size=64
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 a2 6d cb 1e 02 08 08 33 00 00 00 00 00 00 00 00  .m.....3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*func() string-+0
+	rel 44+4 t=-32763 type.*func() string+0
+	rel 56+8 t=1 type.string+0
+type.*"".Chinese SRODATA size=88
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 4b a8 ba aa 09 08 08 36 00 00 00 00 00 00 00 00  K......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 01 00 01 00  ................
+	0x0040 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*main.Chinese.+0
+	rel 48+8 t=1 type."".Chinese+0
+	rel 56+4 t=5 type..importpath."".+0
+	rel 72+4 t=5 type..namedata.GetName.+0
+	rel 76+4 t=26 type.func() string+0
+	rel 80+4 t=26 "".(*Chinese).GetName+0
+	rel 84+4 t=26 "".(*Chinese).GetName+0
+type..namedata.Name. SRODATA dupok size=6
+	0x0000 01 04 4e 61 6d 65                                ..Name
+type."".Chinese SRODATA size=120
+	0x0000 10 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 04 b0 77 77 07 08 08 19 00 00 00 00 00 00 00 00  ..ww............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00  ........(.......
+	0x0060 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.strequal·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*main.Chinese.+0
+	rel 44+4 t=5 type.*"".Chinese+0
+	rel 56+8 t=1 type."".Chinese+96
+	rel 80+4 t=5 type..importpath."".+0
+	rel 96+8 t=1 type..namedata.Name.+0
+	rel 104+8 t=1 type.string+0
+runtime.interequal·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=1 runtime.interequal+0
+type..namedata.*main.Person. SRODATA dupok size=14
+	0x0000 01 0c 2a 6d 61 69 6e 2e 50 65 72 73 6f 6e        ..*main.Person
+type.*"".Person SRODATA size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 91 18 70 14 08 08 08 36 00 00 00 00 00 00 00 00  ..p....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*main.Person.+0
+	rel 48+8 t=1 type."".Person+0
+runtime.gcbits.02 SRODATA dupok size=1
+	0x0000 02                                               .
+type."".Person SRODATA size=104
+	0x0000 10 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0010 fd cf 91 06 07 08 08 14 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.interequal·f+0
+	rel 32+8 t=1 runtime.gcbits.02+0
+	rel 40+4 t=5 type..namedata.*main.Person.+0
+	rel 44+4 t=5 type.*"".Person+0
+	rel 48+8 t=1 type..importpath."".+0
+	rel 56+8 t=1 type."".Person+96
+	rel 80+4 t=5 type..importpath."".+0
+	rel 96+4 t=5 type..namedata.GetName.+0
+	rel 100+4 t=5 type.func() string+0
+runtime.nilinterequal·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=1 runtime.nilinterequal+0
+type..namedata.*interface {}- SRODATA dupok size=15
+	0x0000 00 0d 2a 69 6e 74 65 72 66 61 63 65 20 7b 7d     ..*interface {}
+type.*interface {} SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 4f 0f 96 9d 08 08 08 36 00 00 00 00 00 00 00 00  O......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*interface {}-+0
+	rel 48+8 t=1 type.interface {}+0
+type.interface {} SRODATA dupok size=80
+	0x0000 10 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0010 e7 57 a0 18 02 08 08 14 00 00 00 00 00 00 00 00  .W..............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 24+8 t=1 runtime.nilinterequal·f+0
+	rel 32+8 t=1 runtime.gcbits.02+0
+	rel 40+4 t=5 type..namedata.*interface {}-+0
+	rel 44+4 t=-32763 type.*interface {}+0
+	rel 56+8 t=1 type.interface {}+80
+type..namedata.*[]interface {}- SRODATA dupok size=17
+	0x0000 00 0f 2a 5b 5d 69 6e 74 65 72 66 61 63 65 20 7b  ..*[]interface {
+	0x0010 7d                                               }
+type.*[]interface {} SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 f3 04 9a e7 08 08 08 36 00 00 00 00 00 00 00 00  .......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]interface {}-+0
+	rel 48+8 t=1 type.[]interface {}+0
+type.[]interface {} SRODATA dupok size=56
+	0x0000 18 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 70 93 ea 2f 02 08 08 17 00 00 00 00 00 00 00 00  p../............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]interface {}-+0
+	rel 44+4 t=-32763 type.*[]interface {}+0
+	rel 48+8 t=1 type.interface {}+0
+go.itab.*"".Chinese,"".Person SRODATA dupok size=32
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 4b a8 ba aa 00 00 00 00 00 00 00 00 00 00 00 00  K...............
+	rel 0+8 t=1 type."".Person+0
+	rel 8+8 t=1 type.*"".Chinese+0
+	rel 24+8 t=-32767 "".(*Chinese).GetName+0
+go.itab.*os.File,io.Writer SRODATA dupok size=32
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 44 b5 f3 33 00 00 00 00 00 00 00 00 00 00 00 00  D..3............
+	rel 0+8 t=1 type.io.Writer+0
+	rel 8+8 t=1 type.*os.File+0
+	rel 24+8 t=-32767 os.(*File).Write+0
+type..importpath.fmt. SRODATA dupok size=5
+	0x0000 00 03 66 6d 74                                   ..fmt
+gclocals·1a65e721a2ccc325b382662e7ffee780 SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·2589ca35330fc0fce83503f4569854a0 SRODATA dupok size=10
+	0x0000 02 00 00 00 02 00 00 00 00 00                    ..........
+"".(*Chinese).GetName.arginfo1 SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+gclocals·ff19ed39bdde8a01a800918ac3ef0ec7 SRODATA dupok size=9
+	0x0000 01 00 00 00 04 00 00 00 00                       .........
+gclocals·09cf9819fc716118c209c2d2155a3632 SRODATA dupok size=10
+	0x0000 02 00 00 00 02 00 00 00 02 00                    ..........
+gclocals·0e428aa1f0cdf0b9dfba31fe4af70487 SRODATA dupok size=14
+	0x0000 02 00 00 00 11 00 00 00 00 00 00 00 00 00        ..............
+"".PrintName.stkobj SRODATA static size=32
+	0x0000 01 00 00 00 00 00 00 00 d8 ff ff ff 10 00 00 00  ................
+	0x0010 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 24+8 t=1 runtime.gcbits.02+0
+"".PrintName.arginfo1 SRODATA static dupok size=7
+	0x0000 fe 00 08 08 08 fd ff                             .......
+gclocals·955e25ebd21d9d330257196a49a276e5 SRODATA dupok size=10
+	0x0000 02 00 00 00 04 00 00 00 00 00                    ..........
+"".Person.GetName.arginfo1 SRODATA static dupok size=7
+	0x0000 fe 00 08 08 08 fd ff                             .......
+gclocals·1c79aa8331d1a9241b20f452c1c60e3c SRODATA dupok size=10
+	0x0000 02 00 00 00 05 00 00 00 00 00                    ..........
+os.(*File).close.arginfo1 SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...

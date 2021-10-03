@@ -1,0 +1,280 @@
+"".(*Chinese).GetName STEXT nosplit size=57 args=0x8 locals=0x18 funcid=0x0
+	0x0000 00000 (example3/main.go:11)	TEXT	"".(*Chinese).GetName(SB), NOSPLIT|ABIInternal, $24-8
+	0x0000 00000 (example3/main.go:11)	SUBQ	$24, SP
+	0x0004 00004 (example3/main.go:11)	MOVQ	BP, 16(SP)
+	0x0009 00009 (example3/main.go:11)	LEAQ	16(SP), BP
+	0x000e 00014 (example3/main.go:11)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x000e 00014 (example3/main.go:11)	FUNCDATA	$1, gclocals·2589ca35330fc0fce83503f4569854a0(SB)
+	0x000e 00014 (example3/main.go:11)	FUNCDATA	$5, "".(*Chinese).GetName.arginfo1(SB)
+	0x000e 00014 (example3/main.go:11)	MOVQ	AX, "".chinese+32(SP)
+	0x0013 00019 (example3/main.go:11)	MOVUPS	X15, "".~r0(SP)
+	0x0018 00024 (example3/main.go:12)	MOVQ	"".chinese+32(SP), CX
+	0x001d 00029 (example3/main.go:12)	TESTB	AL, (CX)
+	0x001f 00031 (example3/main.go:12)	MOVQ	(CX), AX
+	0x0022 00034 (example3/main.go:12)	MOVQ	8(CX), BX
+	0x0026 00038 (example3/main.go:12)	MOVQ	AX, "".~r0(SP)
+	0x002a 00042 (example3/main.go:12)	MOVQ	BX, "".~r0+8(SP)
+	0x002f 00047 (example3/main.go:12)	MOVQ	16(SP), BP
+	0x0034 00052 (example3/main.go:12)	ADDQ	$24, SP
+	0x0038 00056 (example3/main.go:12)	RET
+	0x0000 48 83 ec 18 48 89 6c 24 10 48 8d 6c 24 10 48 89  H...H.l$.H.l$.H.
+	0x0010 44 24 20 44 0f 11 3c 24 48 8b 4c 24 20 84 01 48  D$ D..<$H.L$ ..H
+	0x0020 8b 01 48 8b 59 08 48 89 04 24 48 89 5c 24 08 48  ..H.Y.H..$H.\$.H
+	0x0030 8b 6c 24 10 48 83 c4 18 c3                       .l$.H....
+"".main STEXT size=298 args=0x0 locals=0x88 funcid=0x0
+	0x0000 00000 (example3/main.go:15)	TEXT	"".main(SB), ABIInternal, $136-0
+	0x0000 00000 (example3/main.go:15)	LEAQ	-8(SP), R12
+	0x0005 00005 (example3/main.go:15)	CMPQ	R12, 16(R14)
+	0x0009 00009 (example3/main.go:15)	PCDATA	$0, $-2
+	0x0009 00009 (example3/main.go:15)	JLS	284
+	0x000f 00015 (example3/main.go:15)	PCDATA	$0, $-1
+	0x000f 00015 (example3/main.go:15)	SUBQ	$136, SP
+	0x0016 00022 (example3/main.go:15)	MOVQ	BP, 128(SP)
+	0x001e 00030 (example3/main.go:15)	LEAQ	128(SP), BP
+	0x0026 00038 (example3/main.go:15)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0026 00038 (example3/main.go:15)	FUNCDATA	$1, gclocals·87471ff47f1e0f13c6fee0c186afcd29(SB)
+	0x0026 00038 (example3/main.go:15)	FUNCDATA	$2, "".main.stkobj(SB)
+	0x0026 00038 (example3/main.go:16)	MOVUPS	X15, ""..autotmp_6+112(SP)
+	0x002c 00044 (example3/main.go:16)	LEAQ	""..autotmp_6+112(SP), DX
+	0x0031 00049 (example3/main.go:16)	MOVQ	DX, ""..autotmp_5+48(SP)
+	0x0036 00054 (example3/main.go:16)	TESTB	AL, (DX)
+	0x0038 00056 (example3/main.go:16)	MOVQ	$7, ""..autotmp_6+120(SP)
+	0x0041 00065 (example3/main.go:16)	LEAQ	go.string."chinese"(SB), SI
+	0x0048 00072 (example3/main.go:16)	MOVQ	SI, ""..autotmp_6+112(SP)
+	0x004d 00077 (example3/main.go:16)	MOVQ	DX, ""..autotmp_4+56(SP)
+	0x0052 00082 (example3/main.go:16)	LEAQ	type.*"".Chinese(SB), SI
+	0x0059 00089 (example3/main.go:16)	MOVQ	SI, "".p+80(SP)
+	0x005e 00094 (example3/main.go:16)	MOVQ	DX, "".p+88(SP)
+	0x0063 00099 (example3/main.go:17)	MOVQ	"".p+80(SP), DX
+	0x0068 00104 (example3/main.go:17)	MOVQ	"".p+88(SP), SI
+	0x006d 00109 (example3/main.go:17)	MOVQ	DX, ""..autotmp_7+96(SP)
+	0x0072 00114 (example3/main.go:17)	MOVQ	SI, ""..autotmp_7+104(SP)
+	0x0077 00119 (example3/main.go:17)	TESTQ	DX, DX
+	0x007a 00122 (example3/main.go:17)	JNE	126
+	0x007c 00124 (example3/main.go:17)	JMP	253
+	0x007e 00126 (example3/main.go:17)	MOVL	16(DX), DX
+	0x0081 00129 (example3/main.go:17)	MOVL	DX, ""..autotmp_9+28(SP)
+	0x0085 00133 (example3/main.go:17)	CMPL	DX, $-1430607797
+	0x008b 00139 (example3/main.go:17)	JEQ	143
+	0x008d 00141 (example3/main.go:17)	JMP	249
+	0x008f 00143 (example3/main.go:18)	MOVQ	""..autotmp_7+96(SP), DX
+	0x0094 00148 (example3/main.go:18)	LEAQ	type.*"".Chinese(SB), SI
+	0x009b 00155 (example3/main.go:18)	NOP
+	0x00a0 00160 (example3/main.go:18)	CMPQ	DX, SI
+	0x00a3 00163 (example3/main.go:18)	JEQ	167
+	0x00a5 00165 (example3/main.go:18)	JMP	174
+	0x00a7 00167 (example3/main.go:18)	MOVL	$1, AX
+	0x00ac 00172 (example3/main.go:18)	JMP	178
+	0x00ae 00174 (example3/main.go:18)	XORL	AX, AX
+	0x00b0 00176 (example3/main.go:18)	JMP	178
+	0x00b2 00178 (example3/main.go:18)	MOVB	AL, ""..autotmp_8+27(SP)
+	0x00b6 00182 (example3/main.go:18)	TESTB	AL, AL
+	0x00b8 00184 (example3/main.go:18)	JNE	188
+	0x00ba 00186 (example3/main.go:18)	JMP	247
+	0x00bc 00188 (example3/main.go:18)	JMP	190
+	0x00be 00190 (example3/main.go:19)	MOVQ	"".p+88(SP), DX
+	0x00c3 00195 (example3/main.go:19)	MOVQ	"".p+80(SP), AX
+	0x00c8 00200 (example3/main.go:19)	LEAQ	type.*"".Chinese(SB), BX
+	0x00cf 00207 (example3/main.go:19)	CMPQ	AX, BX
+	0x00d2 00210 (example3/main.go:19)	JEQ	214
+	0x00d4 00212 (example3/main.go:19)	JMP	271
+	0x00d6 00214 (example3/main.go:19)	MOVQ	DX, "".chinese+32(SP)
+	0x00db 00219 (example3/main.go:20)	MOVQ	DX, "".chinese+40(SP)
+	0x00e0 00224 (example3/main.go:12)	TESTB	AL, (DX)
+	0x00e2 00226 (<unknown line number>)	NOP
+	0x00e2 00226 (example3/main.go:12)	MOVQ	(DX), AX
+	0x00e5 00229 (example3/main.go:12)	MOVQ	8(DX), CX
+	0x00e9 00233 (example3/main.go:20)	MOVQ	AX, "".~R0+64(SP)
+	0x00ee 00238 (example3/main.go:20)	MOVQ	CX, "".~R0+72(SP)
+	0x00f3 00243 (example3/main.go:20)	JMP	245
+	0x00f5 00245 (example3/main.go:17)	JMP	255
+	0x00f7 00247 (example3/main.go:17)	JMP	251
+	0x00f9 00249 (example3/main.go:17)	JMP	251
+	0x00fb 00251 (example3/main.go:17)	JMP	255
+	0x00fd 00253 (example3/main.go:17)	JMP	255
+	0x00ff 00255 (example3/main.go:22)	MOVQ	128(SP), BP
+	0x0107 00263 (example3/main.go:22)	ADDQ	$136, SP
+	0x010e 00270 (example3/main.go:22)	RET
+	0x010f 00271 (example3/main.go:19)	LEAQ	type.interface {}(SB), CX
+	0x0116 00278 (example3/main.go:19)	PCDATA	$1, $0
+	0x0116 00278 (example3/main.go:19)	CALL	runtime.panicdottypeE(SB)
+	0x011b 00283 (example3/main.go:19)	XCHGL	AX, AX
+	0x011c 00284 (example3/main.go:19)	NOP
+	0x011c 00284 (example3/main.go:15)	PCDATA	$1, $-1
+	0x011c 00284 (example3/main.go:15)	PCDATA	$0, $-2
+	0x011c 00284 (example3/main.go:15)	NOP
+	0x0120 00288 (example3/main.go:15)	CALL	runtime.morestack_noctxt(SB)
+	0x0125 00293 (example3/main.go:15)	PCDATA	$0, $-1
+	0x0125 00293 (example3/main.go:15)	JMP	0
+	0x0000 4c 8d 64 24 f8 4d 3b 66 10 0f 86 0d 01 00 00 48  L.d$.M;f.......H
+	0x0010 81 ec 88 00 00 00 48 89 ac 24 80 00 00 00 48 8d  ......H..$....H.
+	0x0020 ac 24 80 00 00 00 44 0f 11 7c 24 70 48 8d 54 24  .$....D..|$pH.T$
+	0x0030 70 48 89 54 24 30 84 02 48 c7 44 24 78 07 00 00  pH.T$0..H.D$x...
+	0x0040 00 48 8d 35 00 00 00 00 48 89 74 24 70 48 89 54  .H.5....H.t$pH.T
+	0x0050 24 38 48 8d 35 00 00 00 00 48 89 74 24 50 48 89  $8H.5....H.t$PH.
+	0x0060 54 24 58 48 8b 54 24 50 48 8b 74 24 58 48 89 54  T$XH.T$PH.t$XH.T
+	0x0070 24 60 48 89 74 24 68 48 85 d2 75 02 eb 7f 8b 52  $`H.t$hH..u....R
+	0x0080 10 89 54 24 1c 81 fa 4b a8 ba aa 74 02 eb 6a 48  ..T$...K...t..jH
+	0x0090 8b 54 24 60 48 8d 35 00 00 00 00 0f 1f 44 00 00  .T$`H.5......D..
+	0x00a0 48 39 f2 74 02 eb 07 b8 01 00 00 00 eb 04 31 c0  H9.t..........1.
+	0x00b0 eb 00 88 44 24 1b 84 c0 75 02 eb 3b eb 00 48 8b  ...D$...u..;..H.
+	0x00c0 54 24 58 48 8b 44 24 50 48 8d 1d 00 00 00 00 48  T$XH.D$PH......H
+	0x00d0 39 d8 74 02 eb 39 48 89 54 24 20 48 89 54 24 28  9.t..9H.T$ H.T$(
+	0x00e0 84 02 48 8b 02 48 8b 4a 08 48 89 44 24 40 48 89  ..H..H.J.H.D$@H.
+	0x00f0 4c 24 48 eb 00 eb 08 eb 02 eb 00 eb 02 eb 00 48  L$H............H
+	0x0100 8b ac 24 80 00 00 00 48 81 c4 88 00 00 00 c3 48  ..$....H.......H
+	0x0110 8d 0d 00 00 00 00 e8 00 00 00 00 90 0f 1f 40 00  ..............@.
+	0x0120 e8 00 00 00 00 e9 d6 fe ff ff                    ..........
+	rel 3+0 t=24 type.*"".Chinese+0
+	rel 68+4 t=15 go.string."chinese"+0
+	rel 85+4 t=15 type.*"".Chinese+0
+	rel 151+4 t=15 type.*"".Chinese+0
+	rel 203+4 t=15 type.*"".Chinese+0
+	rel 274+4 t=15 type.interface {}+0
+	rel 279+4 t=7 runtime.panicdottypeE+0
+	rel 289+4 t=7 runtime.morestack_noctxt+0
+go.cuinfo.packagename. SDWARFCUINFO dupok size=0
+	0x0000 6d 61 69 6e                                      main
+""..inittask SNOPTRDATA size=24
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00                          ........
+go.info."".(*Chinese).GetName$abstract SDWARFABSFCN dupok size=38
+	0x0000 04 2e 28 2a 43 68 69 6e 65 73 65 29 2e 47 65 74  ..(*Chinese).Get
+	0x0010 4e 61 6d 65 00 01 01 11 63 68 69 6e 65 73 65 00  Name....chinese.
+	0x0020 00 00 00 00 00 00                                ......
+	rel 0+0 t=23 type.*"".Chinese+0
+	rel 0+0 t=23 type.string+0
+	rel 33+4 t=31 go.info.*"".Chinese+0
+go.string."chinese" SRODATA dupok size=7
+	0x0000 63 68 69 6e 65 73 65                             chinese
+runtime.strequal·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=1 runtime.strequal+0
+runtime.memequal64·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=1 runtime.memequal64+0
+runtime.gcbits.01 SRODATA dupok size=1
+	0x0000 01                                               .
+type..namedata.*main.Chinese. SRODATA dupok size=15
+	0x0000 01 0d 2a 6d 61 69 6e 2e 43 68 69 6e 65 73 65     ..*main.Chinese
+type..namedata.*func(*main.Chinese) string- SRODATA dupok size=29
+	0x0000 00 1b 2a 66 75 6e 63 28 2a 6d 61 69 6e 2e 43 68  ..*func(*main.Ch
+	0x0010 69 6e 65 73 65 29 20 73 74 72 69 6e 67           inese) string
+type.*func(*"".Chinese) string SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 e3 61 1e 1c 08 08 08 36 00 00 00 00 00 00 00 00  .a.....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*func(*main.Chinese) string-+0
+	rel 48+8 t=1 type.func(*"".Chinese) string+0
+type.func(*"".Chinese) string SRODATA dupok size=72
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 38 06 bf 05 02 08 08 33 00 00 00 00 00 00 00 00  8......3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 01 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00                          ........
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*func(*main.Chinese) string-+0
+	rel 44+4 t=-32763 type.*func(*"".Chinese) string+0
+	rel 56+8 t=1 type.*"".Chinese+0
+	rel 64+8 t=1 type.string+0
+type..namedata.GetName. SRODATA dupok size=9
+	0x0000 01 07 47 65 74 4e 61 6d 65                       ..GetName
+type..namedata.*func() string- SRODATA dupok size=16
+	0x0000 00 0e 2a 66 75 6e 63 28 29 20 73 74 72 69 6e 67  ..*func() string
+type.*func() string SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 bc f4 77 69 08 08 08 36 00 00 00 00 00 00 00 00  ..wi...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*func() string-+0
+	rel 48+8 t=1 type.func() string+0
+type.func() string SRODATA dupok size=64
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 a2 6d cb 1e 02 08 08 33 00 00 00 00 00 00 00 00  .m.....3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*func() string-+0
+	rel 44+4 t=-32763 type.*func() string+0
+	rel 56+8 t=1 type.string+0
+type.*"".Chinese SRODATA size=88
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 4b a8 ba aa 09 08 08 36 00 00 00 00 00 00 00 00  K......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 01 00 01 00  ................
+	0x0040 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*main.Chinese.+0
+	rel 48+8 t=1 type."".Chinese+0
+	rel 56+4 t=5 type..importpath."".+0
+	rel 72+4 t=5 type..namedata.GetName.+0
+	rel 76+4 t=26 type.func() string+0
+	rel 80+4 t=26 "".(*Chinese).GetName+0
+	rel 84+4 t=26 "".(*Chinese).GetName+0
+type..namedata.Name. SRODATA dupok size=6
+	0x0000 01 04 4e 61 6d 65                                ..Name
+type."".Chinese SRODATA size=120
+	0x0000 10 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 04 b0 77 77 07 08 08 19 00 00 00 00 00 00 00 00  ..ww............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 01 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00  ........(.......
+	0x0060 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.strequal·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*main.Chinese.+0
+	rel 44+4 t=5 type.*"".Chinese+0
+	rel 56+8 t=1 type."".Chinese+96
+	rel 80+4 t=5 type..importpath."".+0
+	rel 96+8 t=1 type..namedata.Name.+0
+	rel 104+8 t=1 type.string+0
+runtime.nilinterequal·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=1 runtime.nilinterequal+0
+type..namedata.*interface {}- SRODATA dupok size=15
+	0x0000 00 0d 2a 69 6e 74 65 72 66 61 63 65 20 7b 7d     ..*interface {}
+type.*interface {} SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 4f 0f 96 9d 08 08 08 36 00 00 00 00 00 00 00 00  O......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.memequal64·f+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*interface {}-+0
+	rel 48+8 t=1 type.interface {}+0
+runtime.gcbits.02 SRODATA dupok size=1
+	0x0000 02                                               .
+type.interface {} SRODATA dupok size=80
+	0x0000 10 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0010 e7 57 a0 18 02 08 08 14 00 00 00 00 00 00 00 00  .W..............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 24+8 t=1 runtime.nilinterequal·f+0
+	rel 32+8 t=1 runtime.gcbits.02+0
+	rel 40+4 t=5 type..namedata.*interface {}-+0
+	rel 44+4 t=-32763 type.*interface {}+0
+	rel 56+8 t=1 type.interface {}+80
+gclocals·1a65e721a2ccc325b382662e7ffee780 SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·2589ca35330fc0fce83503f4569854a0 SRODATA dupok size=10
+	0x0000 02 00 00 00 02 00 00 00 00 00                    ..........
+"".(*Chinese).GetName.arginfo1 SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+gclocals·87471ff47f1e0f13c6fee0c186afcd29 SRODATA dupok size=10
+	0x0000 01 00 00 00 0c 00 00 00 00 00                    ..........
+"".main.stkobj SRODATA static size=32
+	0x0000 01 00 00 00 00 00 00 00 f0 ff ff ff 10 00 00 00  ................
+	0x0010 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 24+8 t=1 runtime.gcbits.01+0
